@@ -1,5 +1,4 @@
-const API_KEY = '60e1cf29566133f8db1d2b4c631cbf37'
-
+let API_KEY = config.API_KEY
 
 let fetchedMovies = false;
 //Example fetch using pokemonapi.co
