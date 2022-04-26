@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+
+		<!-- font awesome cdn -->
+		<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+		<title>Title in the tab</title>
+
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<nav class="nav-bar">
+			<ul>
+				<li><i id="profile" class="fas fa-user"></i></li>
+				<li><i id="settings" class="fas fa-sliders-h"></i></li>
+				<!-- <li><i id="random" class="fas fa-random"></i></li> -->
+				<li><i id="favorites" class="fas fa-heart"></i></li>
+			</ul>
+		</nav>
+
+
+
+		<!-- the PROFILE part -->
+		<div id="profile-container">
+			<div id="profile-info">
+				<div id="close-profile">&times;</div>
+				<h1>Profile</h1>
+				<h2>Choose Profile Picture</h2>
+				<div class="picture-div">
+					<img id="profile-pic-img" src="img/blank-profile.webp" alt="the-profile-picture" />
+					<input type="file" name="profile-pic" id="profile-pic-input" accept="image/png/jpg">	
+				</div>
+			</div>
+		</div>
+
+
+		<!-- the settings part -->
+		<div id="settings-container">
+			<div id="settings-info">
+				<div id="close-settings">&times;</div>
+				<h1>Settings</h1>
+				<h2>Color Scheme</h2>
+				<div class="color-div">
+					<input type="radio" name="colors" id="black" value="black"> 
+					<label id="black-color" for="black"></label>
+					<input type="radio" name="colors" id="blue" value="blue"> 
+					<label id="blue-color" for="blue"></label>
+					<input type="radio" name="colors" id="yellow" value="yellow"> 
+					<label id="yellow-color" for="yellow"></label>
+					<input type="radio" name="colors" id="green" value="green"> 
+					<label id="green-color" for="green"></label>
+					
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- the movie description part -->
+		<div id="full-movie-page-container">
+			<div id="full-movie">
+				<div id="close-full-movie">&times;</div>
+				<div class="full-movie-top">
+					<img id="full-movie-pic" src="" alt="" />
+					<div class="text-div">
+						<i id="heart-to-click" class="fas fa-heart love-it"></i>
+						<h3><span class="rating">6.7</span></h3>
+						<h1 id="full-movie-title">Title of the Movie</h1>
+						<h4 id="full-movie-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam alias excepturi asperiores, omnis nostrum recusandae quia quibusdam rem. Ut odit voluptatibus mollitia libero repellat fuga temporibus quas magnam. Perferendis, optio?</h4>
+					</div>
+					<div id="actors-div">
+						<img id="actor-1" src="" alt="" />
+						<img id="actor-1" src="" alt="" />
+						<img id="actor-1" src="" alt="" />
+						<img id="actor-1" src="" alt="" />
+					</div>
+				</div>
+				<div id="movie-full">
+					
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="headers">
+			<h1>Search Movies</h1>
+			<!-- <div class="search-div">
+				<input type="text" name="" value="">
+				<button type="button" name="button">Search</button>
+			</div> -->
+
+			<div class="search-box">
+				<button class="btn-search"><i class="fas fa-search"></i></button>
+				<input id="search-box" type="text" class="input-search" placeholder="Type to Search...">
+			</div>
+			<h1 id="random">Random <i class="fas fa-random"></i> List</h1> 
+
+			<div class="category-list">
+				<input id="comedy" type="radio" name="cat" value="comedy"/>
+				<label for="comedy" >Comedy</label>
+				<input id="drama" type="radio" name="cat" value="drama"/>
+				<label for="drama" >Drama</label>
+				<input id="animated" type="radio" name="cat" value="animated"/>
+				<label for="animated" >Animated</label>
+				<input id="action" type="radio" name="cat" value="action"/>
+				<label for="action" >Action</label>
+				<input id="mystery" type="radio" name="cat" value="mystery"/>
+				<label for="mystery" >Mystery</label>
+				<input id="romance" type="radio" name="cat" value="romance"/>
+				<label for="romance" >Romance</label>
+			</div>
+
+		</div>
+
+		<div class="movie-container">
+			<!-- <div class="single-movie">
+				<img class="movie-pic" src="" alt="">
+				<div class="bottom-movie">
+					<h2 class="movie-name">Movie</h2>
+					<h3><span class="rating"></span></h3>
+					<p class="desc show-desc">description</p>
+				</div>
+			</div> -->
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
